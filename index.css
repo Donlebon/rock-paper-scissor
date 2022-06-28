@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+h2{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+h3{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* Play Button */
+
+.play{
+    display: block;
+    margin: auto;
+    margin-top: 5em;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    color: white;
+    border: 1px solid #FF7396;
+    background-color: #FF7396;
+}
+
+.play:hover, .play:focus{
+    opacity: 0.8;
+    cursor: pointer;
+}
