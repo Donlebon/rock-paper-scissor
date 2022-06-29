@@ -4,14 +4,21 @@
     padding: 0;
 }
 
+body{
+    font-family: 'M PLUS 1 Code', sans-serif;
+    background-color: #FFE7BF;
+}
+
 img{
     max-width: 100%;
     display: block;
+    height: 100px;
+    width: 100px;
 }
 
 h1{
     text-align: center;
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 
 h2{
@@ -21,7 +28,7 @@ h2{
 
 h3{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 2rem;
 }
 
@@ -31,12 +38,46 @@ h3{
     justify-content: space-around;
 }
 
+/* Images */
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3em;
+}
+
+.paper{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.chosen-hand{
+    border-radius: 1em;
+    border: 2px solid #810955;
+}
+
+.hand-style{
+    border-radius: 1em;
+    border: 2px solid #810955;
+    cursor: pointer;
+    transition-delay: 0.01s;
+}
+
+.hand-style:hover{
+    transform: scale(1.05);
+}
+
+.playerChoice, .compChoice{
+    margin: auto;
+    margin-top: 1em;
+}
+
 /* Play Button */
 
 .play{
     display: block;
     margin: auto;
-    margin-top: 5em;
+    margin-top: 3em;
     padding: 1em 1.5em;
     border-radius: 1em;
     color: white;
@@ -44,7 +85,7 @@ h3{
     background-color: #FF7396;
 }
 
-.play:hover, .play:focus{
+.play:hover{
     opacity: 0.8;
     cursor: pointer;
 }
